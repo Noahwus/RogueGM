@@ -39,6 +39,7 @@ switch(state){
 			state = "roll init";
 		break;
 		
+		
 		case "roll init":
 			tempInit = ds_priority_create();
 			
@@ -88,10 +89,11 @@ switch(state){
 					break;
 					
 					case "melee":
-					
+						meleeAttack_range(currentActor);
 					break;
 				}
 			}else{
+				//ENEMY TURN
 				currentActor.flash = true;
 				currentActor.alarm[0] = 1;
 			}

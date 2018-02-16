@@ -31,7 +31,9 @@ hitPoints = maxHitPoints;
 hitBonus = profMod + strMod;
 attackType = "melee";
 attackTarget = noone;
-attackTimer = 0;
+
+//Timer to perform actions
+actionTimer = 0;
 
 //damage variables
 damageDice = 4;
@@ -47,14 +49,33 @@ move = 6;			//how far actor can move peraction
 actions = 2;//number of actions actor can use
 canAct = false;
 					
+//special action variables
+charge = false;
+//chargeAttackDamage = 0;
+sneakAttack = false;
+sneakAttackDamage = 0;
+
+//spell and action variables
+readiedAction =  "error";
+
+
+//initiative bariles			
 initiative = dexMod;//
 initRoll = 0;		//
+
+//variables related to buttons
+defaultActions = ds_list_create();
+ds_list_add(defaultActions, "end turn");
+
+
 
 //variables related to pathing================
 
 movementPath = path_add();
 path_set_kind(movementPath,2); //1 is rounded path, 2 is straight line
 path_set_closed(movementPath,false);
+
+endPath = "idle";
 
 moveSpeed = 8;
 

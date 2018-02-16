@@ -4,7 +4,7 @@ event_inherited();
 name = "Sandy";
 
 class = "Rogue";
-race = "Human";
+race = "Elf";
 
 //character statistics
 
@@ -30,6 +30,10 @@ attackRange = 15*GRID_SIZE;
 //movement and action variables
 move = 7;			//how far actor can move peraction
 actions = 2;		//number of actions actor can use
+
+//special action variables
+sneakAttack = true;
+sneakAttackDamage = 6;
 
 //initiative variables
 initiative = dexMod;//

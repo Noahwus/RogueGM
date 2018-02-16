@@ -39,6 +39,12 @@ armorClass = 18; //no dex because heavy armor?
 move = 5;			//how far actor can move peraction
 actions = 2;		//number of actions actor can use
 
+//special action variables
+charge = true;
+
+sneakAttack = false;
+sneakAttackDamage = 0;
+
 //initiative variables
 initiative = dexMod;//
 initRoll = 0;		//
