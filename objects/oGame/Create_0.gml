@@ -4,6 +4,7 @@ state = "initialize";
 #macro REDTEAM 10
 #macro BLUETEAM 20
 #macro GRID_SIZE 32
+#macro GRID_HALF 16
 
 draw_set_font(fDefault);
 

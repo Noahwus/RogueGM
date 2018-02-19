@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description 
 //GRID_SIZE = 32;
 
 x = mouse_x;
